@@ -12,12 +12,38 @@
 <body>
     
     <div class="container">
+        <a class="setings" href="#">
+            <img src="/images/settings.svg" alt="setting" class="setting__img">
+        </a>
+        <div class="region__popup">
+            <div class="popup__wraper"></div>
+            <div class="popup__window">
+                <p class="popup__title">выберите город:</p>
+                <ul class="popup__sity_list">
+                    <li class="popup__sity_item">
+                        <a href="#" id="link_engels" class="header__link">Энгельс</a>
+                    </li>
+                    <li class="popup__sity_item">
+                        <a href="#" id="link_saratov" class="header__link">Саратов</a>
+                    </li>
+                    <li class="popup__sity_item">
+                        <a href="#" id="link_sochi" class="header__link">Сочи</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="wrapper">
-            <h1 class="title">Юридическая компания <b>"СФЕРА"</b></h1>
+            <div class="logo_block">
+                <img src="/images/logo.png" alt="logo" class="logo__img">
+                <p class="logo__text"><b>"СФЕРА"</b></p>
+            </div>
+            
+            <h1 class="title">Юридическая компания </h1>
             <p class="sub__title">оказываем юридическую поддержку гражданам попавшим в ДТП</p>
             <div class="header">
-                <a href="tel:+78453581581" class="header__link">коммисар в Энгельсе</a>
-                <a href="tel:+79882330202" class="header__link">коммисар в Сочи</a>
+                <a href="tel:+78453581581" id="link_engels_str" class="header__link">коммисар в Энгельсе</a>
+                <a href="tel:+78453581581" id="link_saratov_str" class="header__link">коммисар в Саратове</a>
+                <a href="tel:+79882330202" id="link_sochi_str" class="header__link">коммисар в Сочи</a>
             </div>
             <div class="header">
                 <a href="tel:+79271581581" class="header__link">звонок Юристу</a>
@@ -25,20 +51,25 @@
             <div class="main">
                 <ul class="main__list">
                     <li class="main__item">
-                        <img src="/images/shema.svg" alt="main_img" class="main_img">
-                        <p class="item_text">Составление схемы ДТП</p>
-                        <p class="item_subtext">Грамотно составим схему ДТП.</p> 
-
-                    </li>
-                    <li class="main__item">
-                        <img src="/images/commisar.svg" alt="main_img" class="main_img">
-                        <p class="item_text">Аварийный коммисар</p>
-                        <p class="item_subtext">Наш сотрудник приедет на место в течение 30 минут.</p> 
-                    </li>
-                    <li class="main__item">
-                        <img src="/images/expertiza.svg" alt="main_img" class="main_img">
+                        <a href="#" class="main__item_link">
+                            <img src="/images/expertiza.svg" alt="main_img" class="main_img">
+                        </a>      
                         <p class="item_text">Независимая экспертиза</p>
                         <p class="item_subtext">Безошибочно оценим ущерб при ДТП.</p> 
+                    </li>
+                    <li class="main__item">
+                        <a href="#" class="main__item_link">
+                            <img src="/images/commisar.svg" alt="main_img" class="main_img">
+                        </a>
+                        <p class="item_text">Аварийный коммисар</p>
+                        <p class="item_subtext">Наш сотрудник приедет на место в течение 30 минут.</p>                       
+                    </li>
+                    <li class="main__item">
+                        <a href="#" class="main__item_link">
+                            <img src="/images/shema.svg" alt="main_img" class="main_img">
+                        </a>
+                        <p class="item_text">Юрист</p>
+                        <p class="item_subtext">Юредическая помощь по вопросам гражданского права.</p>                       
                     </li>
                 </ul>
             </div>
@@ -53,5 +84,8 @@
         </div>
         
     </div>
+
+    <script type="text/javascript" src="js/jq_3.6.3_min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
