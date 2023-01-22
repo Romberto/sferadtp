@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normilize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <title>Document</title>
@@ -33,13 +34,19 @@
             </div>
         </div>
         <div class="wrapper">
-            <div class="logo_block">
-                <img src="/images/logo.png" alt="logo" class="logo__img">
-                <p class="logo__text"><b>"СФЕРА"</b></p>
+            <div class="logo__main_block">
+                <div class="logo__elem">
+                    <div class="logo_block">
+                        <img src="/images/logo.png" alt="logo" class="logo__img">
+                        <p class="logo__text">СФЕРА</p>
+                    </div>
+                    <p class="logo__text-small">Юридическая компания </p>
+                </div>
+
+                <p class="logo__stih_eng">попал в ДТП телефон один <a href="tel:+78453581-581">581-581</a></p>
+                <p class="logo_stih_sochi">попал в ДТП не беда набирай <a href="tel:+78622330202">2330202</a></p>
+
             </div>
-            
-            <h1 class="title">Юридическая компания </h1>
-            <p class="sub__title">оказываем юридическую поддержку гражданам попавшим в ДТП</p>
             <div class="header">
                 <a href="tel:+78453581581" id="link_engels_str" class="header__link">коммисар в Энгельсе</a>
                 <a href="tel:+78453581581" id="link_saratov_str" class="header__link">коммисар в Саратове</a>
@@ -50,78 +57,111 @@
             </div>
             <div class="main">
                 <ul class="main__list">
-                    <li class="main__item" id="experts">
-                        <a href="#" class="main__item_link">
-                            <img src="/images/expertiza.svg" alt="main_img" class="main_img">
-                        </a>      
-                        <p class="item_text">Независимая экспертиза</p>
-                        <p class="item_subtext">Безошибочно оценим ущерб при ДТП.</p> 
-                        <div class="expert__popup" id="exp_engels_popup">
-                            <p class="popup__text">"Энгельс, Саратов"</p>
-                            <p class="popup__text">Безошибочно оценим ущерб при ДТП</p>
-                            <p class="popup__text">Безошибочно оценим ущерб при ДТП</p>
-                            <p class="popup__text">Безошибочно оценим ущерб при ДТП</p>
-                            <p class="popup__text">Безошибочно оценим ущерб при ДТП</p>
-                            <a href="tel:+79020452111" class="popup__btn"></a>
-                        </div> 
-                        <div class="expert__popup" id="exp_sochi_popup">
-                            <p class="popup__text">"Сочи"</p>
-                            <p class="popup__text">Безошибочно оценим ущерб при ДТП</p>
-                            <p class="popup__text">Безошибочно оценим ущерб при ДТП</p>
-                            <p class="popup__text">Безошибочно оценим ущерб при ДТП</p>
-                            <p class="popup__text">Безошибочно оценим ущерб при ДТП</p>
-                            <a href="tel:+79882330202" class="popup__btn"></a>
-                        </div> 
 
-                    </li>
-                    <li class="main__item" id="commisars">
-                        <a href="#" class="main__item_link">
+                    <li class="main__item" >
+                        <a href="#" class="main__item_link" id="commisars">
                             <img src="/images/commisar.svg" alt="main_img" class="main_img">
-                        </a>
-                        <p class="item_text">Аварийный коммисар</p>
-                        <p class="item_subtext">Наш сотрудник приедет на место в течение 30 минут.</p> 
-                        <div class="commisar__popup" id="com_engels_popup">
-                            <p class="popup__text">"Энгельс, Саратов"</p>
+                            <p class="item_text">Аварийный коммисар</p>
+                            <p class="item_subtext">Наш сотрудник приедет на место в течение 30 минут.</p> 
+                        </a>                       
+
+                        <div class="commisar__popup" id="com_engels_popup">                           
                             <p class="popup__text">- быстро реагируем на звонок.</p>
-                            <p class="popup__text">- заполним евро-протокол согласно регламенту.</p>
+                            <p class="popup__text">- оформим ДТП согласно регламенту и правилам ПДД.</p>
                             <p class="popup__text">- сделаем необходимые фото для страховой.</p>
                             <p class="popup__text">- первичная юридическая консультация.</p>
                             <a href="tel:+78453581581" class="popup__btn"></a>
                         </div> 
-                        <div class="commisar__popup" id="com_sochi_popup">
-                            <p class="popup__text">"Сочи"</p>
+                        <div class="commisar__popup" id="com_sochi_popup">                          
                             <p class="popup__text">- быстро реагируем на звонок.</p>
-                            <p class="popup__text">- заполним евро-протокол согласно регламенту.</p>
+                            <p class="popup__text">- оформим ДТП согласно регламенту и правилам ПДД.</p>
                             <p class="popup__text">- сделаем необходимые фото для страховой.</p>
                             <p class="popup__text">- первичная юридическая консультация.</p>
                             <a href="tel:+79882330202" class="popup__btn"></a>
                         </div>                      
                     </li>
-                    <li class="main__item">
+
+                    <li class="main__item" >  
                         <a href="#" class="main__item_link" id="jurist">
-                            <img src="/images/shema.svg" alt="main_img" class="main_img">
-                        </a>
-                        <p class="item_text">Юрист</p>
-                        <p class="item_subtext">Юредическая помощь по вопросам гражданского права.</p> 
+                            <img src="/images/shema.svg" alt="main_img" class="main_img">                       
+                            <p class="item_text">Юрист</p>
+                            <p class="item_subtext">Юридическая помощь по вопросам гражданского права.</p> 
+                        </a>                     
+
                         <div class="jurist__popup">
-                            <p class="popup__text">"Юрист"</p>
-                            <p class="popup__text">- потоп</p>
-                            <p class="popup__text">- споры со страховой</p>
-                            <p class="popup__text">- развод</p>
-                            <p class="popup__text">- наследство </p>
+                            <p class="popup__text">- споры при ДТП;</p>
+                            <p class="popup__text">- земельные споры;</p>
+                            <p class="popup__text">- имущественные споры;</p>
+                            <p class="popup__text">- наследственные споры;</p>
+                            <p class="popup__text">- раздел имущества супругов.</p>
                             <a href="tel:+79271581581" class="popup__btn"></a>
                         </div>                      
+                    </li>
+                    <li class="main__item " >
+                        <a href="#" class="main__item_link" id="experts">
+                            <img src="/images/expertiza.svg" alt="main_img" class="main_img">   
+                            <p class="item_text">Независимая экспертиза</p>
+                            <p class="item_subtext">Безошибочно оценим ущерб при ДТП.</p> 
+                        </a>
+
+                        <div class="expert__popup" id="exp_engels_popup">
+                            
+                            <p class="popup__text">- автотехническая экспертиза;</p>
+                            <p class="popup__text">- транспортно-трассологическая экспертиза;</p>
+                            <p class="popup__text">- строительно-техническая экспертиза;</p>
+                            <p class="popup__text">- землеустроительная экспертиза;</p>
+                            <p class="popup__text">- оценочная экспертиза;</p>
+                            <p class="popup__text">- товароведческая экспертиза.</p>
+                            <a href="tel:+79020452111" class="popup__btn"></a>
+                        </div> 
+                        <div class="expert__popup" id="exp_sochi_popup">                           
+                            <p class="popup__text">- автотехническая экспертиза;</p>
+                            <p class="popup__text">- транспортно-трассологическая экспертиза;</p>
+                            <p class="popup__text">- строительно-техническая экспертиза;</p>
+                            <p class="popup__text">- землеустроительная экспертиза;</p>
+                            <p class="popup__text">- оценочная экспертиза;</p>
+                            <p class="popup__text">- товароведческая экспертиза.</p>
+                            <a href="tel:+79882330202" class="popup__btn"></a>
+                        </div> 
+
                     </li>
                 </ul>
             </div>
             <footer class="footer">
-                <p class="footer__text">Адрес офиса в Энгельсе:</p>
-                <p class="footer__text">Саратовская обл.,ул.Коммунистическая д.39а</p>
-                <div class="footer__list">
-                    <p class="footer__text">телефон:</p>
-                    <a href="tel:+78453581581" class="footer__link">581581</a>
+                <div class="footer_eng">
+                    <p class="footer__text">Адрес офиса в Энгельсе:</p>
+                    <p class="footer__text">Саратовская обл.г.Энгельс,ул.Коммунистическая д.39а</p>
+                    <div class="footer__list">
+                        <p class="footer__text">телефон:</p>
+                        <a href="tel:+78453581581" class="footer__link">581-581</a>
+                    </div>
                 </div>
+                <div class="footer_sar">
+                    <p class="footer__text">Адрес офиса в Саратове:</p>
+                    <p class="footer__text">Саратовская обл.г.Саратов,ул.Чернышевского 77/18 офис 8</p>
+                    <div class="footer__list">
+                        <p class="footer__text">телефон:</p>
+                        <a href="tel:+78453581581" class="footer__link">581-581</a>
+                    </div>
+                </div>
+                <div class="footer__soc">
+                    <p class="footer__text">следите за нами в соц. сетях</p>
+                    <ul class="footer__soc_list">
+                        <li class="footer__soc_item">
+                            <a href="https://t.me/+VJ_r4H9xKc9jNjYy" target="_blank" class="footer__soc_link">
+                                <img src="images/telegram.svg" alt="tele" class="footer__soc_img">
+                            </a>
+                        </li>
+                        <li class="footer__soc_item">
+                            <a href="https://vk.com/club217337565" target="_blank" class="footer__soc_link">
+                                <img src="images/vk.svg" alt="vk" class="footer__soc_img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            
             </footer>
+
         </div>
         
     </div>

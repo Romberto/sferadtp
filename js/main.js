@@ -4,12 +4,12 @@ window.addEventListener('load', function(){
     // кнопка Энгельс
     $('#link_engels').on('click', function(e){
         e.preventDefault()
-        $('#link_engels_str').fadeIn()
-        $('.setings').fadeIn()
-        $('.footer').css('visibility', 'visible')
+        $('.footer_eng, .logo__stih_eng, .setings, #link_engels_str').fadeIn()
+        $('.footer_sar').fadeOut()
         $('.region__popup').fadeOut()
-        $('#commisars').find('.main__item_link').attr('id', 'com_engels')
-        $('#experts').find('.main__item_link').attr('id', 'exp_engels')
+        $('#commisars').addClass('com_engels')
+        $('#experts').addClass('exp_engels')
+        $('.logo__stih_eng').addClass('animate__animated animate__zoomIn animate__repeat-3')
 
     })
 
@@ -17,23 +17,21 @@ window.addEventListener('load', function(){
 
     $('#link_saratov').on('click', function(e){
         e.preventDefault()
-        $('#link_saratov_str').fadeIn()
-        $('.setings').fadeIn()
-        $('.footer').css('visibility', 'hidden')
-        $('.region__popup').fadeOut()
-        $('#commisars').find('.main__item_link').attr('id', 'com_saratov')
-        $('#experts').find('.main__item_link').attr('id', 'exp_saratov')
+        $('.footer_sar, .logo__stih_eng, .setings, #link_saratov_str').fadeIn()
+        $('.region__popup, .footer_eng').fadeOut()
+        $('#commisars').addClass('com_saratov')
+        $('#experts').addClass('exp_saratov')
+        $('.logo__stih_eng').addClass('animate__animated animate__zoomIn animate__repeat-3')
     })
 
     // кнопка Сочи
     $('#link_sochi').on('click', function(e){
         e.preventDefault()
-        $('#link_sochi_str').fadeIn()
-        $('.setings').fadeIn()
-        $('.footer').css('visibility', 'hidden')
-        $('.region__popup').fadeOut()
-        $('#commisars').find('.main__item_link').attr('id', 'com_sochi')
-        $('#experts').find('.main__item_link').attr('id', 'exp_sochi')
+        $('#link_sochi_str, .setings, .logo_stih_sochi').fadeIn()
+        $('.footer_eng, .region__popup, .footer_sar').fadeOut()
+        $('#commisars').addClass('com_sochi')
+        $('#experts').addClass('exp_sochi')
+        $('.logo_stih_sochi').addClass('animate__animated animate__zoomIn animate__repeat-3')
     })
 
     // кнопка настройки города (шестирёнка)
@@ -43,13 +41,14 @@ window.addEventListener('load', function(){
         $('.region__popup').fadeOut()
         $('#link_engels_str, #link_saratov_str, #link_sochi_str').fadeOut()
         $('.region__popup').fadeIn()
-        $('.footer').css('visibility', 'hidden')
-        $('#commisars').find('.main__item_link').removeAttr('id')
-        $('#experts').find('.main__item_link').removeAttr('id')
+        $('.footer_sar, .footer_eng, .logo_stih_sochi, .logo__stih_eng').fadeOut()
+        $('#commisars').removeClass('com_sochi com_saratov com_engels')
+        $('#experts').removeClass('exp_sochi exp_saratov exp_engels')
+        $('.logo_stih_sochi, .logo__stih_eng').removeClass('animate__animated animate__zoomIn animate__repeat-3')
     })
 
     // иконка коммисар
-    $('#commisars').on('click','#com_sochi' ,function(e){
+    $('.main__list').on('click','.com_sochi' ,function(e){
         e.preventDefault()
         $('#com_sochi_popup').fadeIn()
     })
@@ -61,10 +60,6 @@ window.addEventListener('load', function(){
         }
     });
 
-    $('#commisars').on('click','#com_engels' ,function(e){
-        e.preventDefault()
-        $('#com_engels_popup').fadeIn()
-    })
 
     $(document).mouseup(function (e) {
         var container = $("#com_engels_popup");
@@ -73,14 +68,14 @@ window.addEventListener('load', function(){
         }
     });
 
-    $('#commisars').on('click','#com_engels , #com_saratov' ,function(e){
+    $('.main__list').on('click','.com_engels, .com_saratov' ,function(e){
         e.preventDefault()
         $('#com_engels_popup').fadeIn()
     })
 
     // иконка эксперт
 
-    $('#experts').on('click','#exp_sochi' ,function(e){
+    $('.main__list').on('click','.exp_sochi' ,function(e){
         e.preventDefault()
         $('#exp_sochi_popup').fadeIn()
     })
@@ -93,7 +88,7 @@ window.addEventListener('load', function(){
     });
 
 
-    $('#experts').on('click','#exp_saratov' ,function(e){
+    $('.main__list').on('click','.exp_saratov, .exp_engels' ,function(e){
         e.preventDefault()
         $('#exp_engels_popup').fadeIn()
     })
@@ -105,17 +100,8 @@ window.addEventListener('load', function(){
         }
     });
 
-    $('#experts').on('click','#exp_engels' ,function(e){
-        e.preventDefault()
-        $('#exp_engels_popup').fadeIn()
-    })
 
-    $(document).mouseup(function (e) {
-        var container = $("#exp_engels_popup");
-        if (container.has(e.target).length === 0){
-            container.fadeOut();
-        }
-    });
+    /* юристы */
 
     $('#jurist').on('click', function(e){
         e.preventDefault()
