@@ -4,12 +4,13 @@ window.addEventListener('load', function(){
     // кнопка Энгельс
     $('#link_engels').on('click', function(e){
         e.preventDefault()
-        $('.footer_eng, .logo__stih_eng, .setings, #link_engels_str').fadeIn()
+        $('.footer_eng, .logo__stih_eng, .setings, #link_engels_str, #tow_truck').fadeIn()
         $('.footer_sar').fadeOut()
         $('.region__popup').fadeOut()
         $('#commisars').addClass('com_engels')
         $('#experts').addClass('exp_engels')
         $('.logo__stih_eng').addClass('animate__animated animate__zoomIn animate__repeat-3')
+        
 
     })
 
@@ -17,11 +18,12 @@ window.addEventListener('load', function(){
 
     $('#link_saratov').on('click', function(e){
         e.preventDefault()
-        $('.footer_sar, .logo__stih_eng, .setings, #link_saratov_str').fadeIn()
+        $('.footer_sar, .logo__stih_eng, .setings, #link_saratov_str, #tow_truck').fadeIn()
         $('.region__popup, .footer_eng').fadeOut()
         $('#commisars').addClass('com_saratov')
         $('#experts').addClass('exp_saratov')
         $('.logo__stih_eng').addClass('animate__animated animate__zoomIn animate__repeat-3')
+        
     })
 
     // кнопка Сочи
@@ -34,6 +36,10 @@ window.addEventListener('load', function(){
         $('.logo_stih_sochi').addClass('animate__animated animate__zoomIn animate__repeat-3')
     })
 
+    // кнопка Эвакуатор
+
+    $()
+
     // кнопка настройки города (шестирёнка)
     $('.setings').on('click', function(e){
         e.preventDefault()
@@ -45,6 +51,8 @@ window.addEventListener('load', function(){
         $('#commisars').removeClass('com_sochi com_saratov com_engels')
         $('#experts').removeClass('exp_sochi exp_saratov exp_engels')
         $('.logo_stih_sochi, .logo__stih_eng').removeClass('animate__animated animate__zoomIn animate__repeat-3')
+        $('#tow_truck').fadeOut()
+
     })
 
     // иконка коммисар
